@@ -1,11 +1,12 @@
-
 import './App.css';
+import Messages from "./components/Messages/Messages";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+      <Layout>
+        <Messages/>
+      </Layout>
   );
 }
 

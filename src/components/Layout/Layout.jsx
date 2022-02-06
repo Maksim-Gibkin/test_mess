@@ -1,21 +1,6 @@
 import React from "react";
-import s from "styled-components";
+import s from "./Layout.module.css"
 
-const Container = s.div`
-  display: flex;
-`
-
-const AsideContainer = s.ul`
-  background-color: #6c6161;
-  color:white;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-`
-
-const Content = s.div`
-background-color: red
-`
 
 const links = [
     {name: "Home", link:''},
@@ -27,18 +12,18 @@ const links = [
 
 const Layout = ({children})=>{
     return(
-        <Container>
-            <AsideContainer>
+        <div className={s.container}>
+            <ul className={s.menu_list}>
                 {links.map((link, key)=>
                     <li key={key}>
                         <a href="#">{link.name}</a>
                     </li>
                 )}
-            </AsideContainer>
-            <Content>
+            </ul>
+            <div className={s.content_layout}>
                 {children}
-            </Content>
-        </Container>
+            </div>
+        </div>
     )
 }
 

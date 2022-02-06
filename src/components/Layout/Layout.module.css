@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.menu_list {
+    background-color: #6c6161;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.menu_list li {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.content_layout {
+    background-color: red
+}
+

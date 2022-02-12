@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 533px;
     margin: 0 auto;
 }
 
@@ -37,9 +37,6 @@
     background-color: #373a43;
 }
 
-.content_layout {
-    background-color: red
-}
 
 .logo{
 width: 25px;

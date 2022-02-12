@@ -9,10 +9,18 @@
     background-color: #fff;
     padding: 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 8px;
+
+    width: 600px;
+    height: 500px;
+    overflow: scroll;
 }
 
+::-webkit-scrollbar { /* chrome based */
+    width: 0;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
 .messagesHeader{
 
 }
@@ -22,13 +30,28 @@
     height: 33px;
     border: 1px solid #6c6161;
 }
+
+
+.messages_content{
+  display: flex;
+    flex-direction: column;
+}
+
+
 .messages_wrapper{
     display: flex;
-    width: 600px;
 }
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 
 .messages{
     background-color: #f4f5f9;
+    width: 400px;
 }
 .messages_text {
     padding: 8px 15px 15px;
@@ -39,7 +62,6 @@
     justify-content: space-between;
 
     padding: 15px 15px 0;
-    width: 500px;
 }
 
 

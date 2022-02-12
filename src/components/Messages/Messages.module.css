@@ -1,8 +1,9 @@
 .container {
     display:flex;
+    color: #aeafaf;
 }
 .header_wrapper{
-    background-color: #d9cdcd;
+    background-color: #ecedf1;
 }
 .messages_container {
     background-color: #fff;
@@ -12,28 +13,33 @@
     gap: 8px;
 }
 
+.messagesHeader{
+
+}
+
 .input {
     width: 500px;
     height: 33px;
     border: 1px solid #6c6161;
 }
-
-.message_wrapper{
+.messages_wrapper{
     display: flex;
     width: 600px;
 }
 
-.message {
-    background: #f3f3f3;
-    padding: 8px;
+.messages{
+    background-color: #f4f5f9;
+}
+.messages_text {
+    padding: 8px 15px 15px;
 }
 
-.message_title{
+.messages_title{
     display: flex;
-    background: #f3f3f3;
-
-    width: 500px;
     justify-content: space-between;
+
+    padding: 15px 15px 0;
+    width: 500px;
 }
 
 

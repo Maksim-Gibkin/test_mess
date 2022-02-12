@@ -6,19 +6,43 @@
 }
 
 .menu_list {
-    background-color: #6c6161;
-    color:white;
+    background-color: #4a4e59;
     display: flex;
     flex-direction: column;
     width: 200px;
 }
 
+.menu_list_link {
+    margin: 0 0 0 8px;
+}
+
 .menu_list li {
-    padding: 5px;
+    padding: 10px;
     margin: 5px 0;
+
+    display: flex;
+    align-items: center;
+
+
+    color: white;
+    fill: white;
+}
+
+.menu_list li:active{
+    color: #18a2b8;
+    fill: #18a2b8;
+    border-left:  4px solid #18a2b8;
+    padding-left: 6px;
+
+    background-color: #373a43;
 }
 
 .content_layout {
     background-color: red
+}
+
+.logo{
+width: 25px;
+    height: 25px;
 }
 

@@ -1,9 +1,9 @@
 .container{
-    margin: 0 15px;
+    margin: 0 0 0 15px;
 }
 
 .container button {
     padding: 5px;
-    background-color: #368c8f;
+    background-color: #259eba;
     color: #fff;
 }

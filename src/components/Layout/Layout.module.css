@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
-    height: 533px;
+    height: 530px;
     margin: 0 auto;
 }
 
@@ -23,23 +23,32 @@
     display: flex;
     align-items: center;
 
-
+    font-weight: 600;
     color: white;
     fill: white;
 }
 
-.menu_list li:active{
+.menu_list .menu_list_linkAct {
     color: #18a2b8;
     fill: #18a2b8;
-    border-left:  4px solid #18a2b8;
+    border-left: 4px solid #18a2b8;
+    padding-left: 6px;
+
+    background-color: #373a43;
+}
+
+.menu_list li:active {
+    color: #18a2b8;
+    fill: #18a2b8;
+    border-left: 4px solid #18a2b8;
     padding-left: 6px;
 
     background-color: #373a43;
 }
 
 
-.logo{
-width: 25px;
+.logo {
+    width: 25px;
     height: 25px;
 }
 

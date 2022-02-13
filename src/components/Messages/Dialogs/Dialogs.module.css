@@ -1,0 +1,157 @@
+
+.messages_container {
+    background-color: #fff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+
+    width: 600px;
+    height: 400px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
+.input_wrapper {
+    padding: 16px 16px 32px 16px;
+    width: 600px;
+    height: 50px;
+    border-top: rgba(108, 97, 97, 0.25) 1px solid;
+}
+
+.input {
+    width: 568px;
+    height: 33px;
+    border: 1px solid #6c6161;
+}
+
+.input::placeholder {
+    color: rgba(107, 108, 112, 0.63);
+    padding-left: 3px;
+}
+
+.messages_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages_header {
+    padding: 10px;
+    height: 60px;
+    width: 600px;
+
+    border-bottom: rgba(108, 97, 97, 0.25) 1px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messages_chatWrap {
+    display: flex;
+    align-items: center;
+}
+
+.messages_chatWrap img {
+    width: 45px;
+    height: 45px;
+}
+
+.messages_chatWrap span {
+    width: 350px;
+}
+
+.userpic_wrap {
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-right: -10px;
+}
+
+.userpic_wrap > img:not(:first-child) {
+    margin-left: -8px;
+}
+
+.messages_wrapper {
+    display: flex;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.messages {
+    background-color: #f4f5f9;
+    width: 400px;
+}
+
+.messages_text {
+    padding: 8px 15px 15px;
+}
+
+.messages_title {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 15px 0;
+}
+
+.chat_name {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.chats_item_avatar, .messages_avatar {
+    margin-right: 10px;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.chats_title {
+    font-weight: 700;
+}
+
+.avatar_userpic, .avatar_userpic_amt {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: white 2px solid;
+}
+
+.avatar_userpic_amt {
+    margin-left: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #8d8484;
+    color: white;
+}
+
+.avatar_userpic_amtNone {
+    display: none;
+}
+
+.btn {
+    margin: 0 25px;
+
+    width: 25px;
+    height: 25px;
+    fill: rgba(108, 97, 97, 0.25);
+    stroke: rgba(108, 97, 97, 0.25);
+    stroke-width: 10px;
+    cursor: pointer;
+}

@@ -17,7 +17,7 @@ const Layout = ({children})=>{
         <div className={s.container}>
             <ul className={s.menu_list}>
                 {links.map((link, key)=>
-                    <li key={key} >
+                    <li key={key} className={link.name === 'Messages' ? s.menu_list_linkAct : ''}>
                         <NavLogo id={link.logo} />
                         <a href="#" className={s.menu_list_link}>{link.name}</a>
                     </li>

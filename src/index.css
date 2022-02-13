@@ -1,6 +1,10 @@
 *, ::before, ::after {
     box-sizing: border-box;
 }
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
 
 img {
     max-width: 100%;
